@@ -1,0 +1,22 @@
+header,
+main,
+aside,
+footer {
+    background-color: gray;
+}
+
+header {
+    height: 90px;
+    padding: 10px;
+}
+
+.logo {
+    background-color: crimson;
+    height: 2em;
+    margin-bottom: .5em;
+}
+
+nav {
+    background-color: lightgray;
+    height: 30px;
+}

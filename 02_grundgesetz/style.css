@@ -1,0 +1,39 @@
+* {
+    font-family: "FancyFont", sans-serif;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-weight:200;
+    letter-spacing: 0.15em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h5 {
+    color: red;
+}
+
+/* ul li:nth-child(2) {
+    text-decoration: underline;
+} */
+
+.highlight {
+    text-decoration: underline;
+}
+
+.doubtful {
+    font-style: italic;
+}
+
+/* .fancy-highlight {
+    text-decoration:  underline wavy yellowgreen;
+    background-color: pink;
+    text-shadow: 2px 2px 2px purple;
+} */
