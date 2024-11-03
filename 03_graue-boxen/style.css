@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 810px;
+}
+
 header,
 main,
 aside,
@@ -8,6 +16,7 @@ footer {
 header {
     height: 90px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -19,4 +28,33 @@ header {
 nav {
     background-color: lightgray;
     height: 30px;
+}
+
+main,
+aside {
+    height: 400px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 600px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+article {
+    background-color: lightblue;
+    height: 70px;
+    width: 66%;
+    margin-bottom: 10px;
+}
+
+aside {
+    width: 200px;
+}
+
+footer {
+    clear: both;
+    height: 90px;
 }
