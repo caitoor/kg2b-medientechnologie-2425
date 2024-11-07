@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 3fr 1fr 9fr 3fr 1fr;
+    gap: 10px;
+}
+
+header {
+    background-color: red;
+    grid-column: span 2;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+/* jede h1 in header */
+header h1 {
+    text-shadow: 0 0 20px white;
+}
+
+header:hover {
+    background-color: black;
+}
+
+nav {
+    background-color: blue;
+    grid-column: span 2;
+
+}
+
+aside {
+    background-color: green;
+    grid-row: span 2;
+}
+
+main {
+    background-color: yellow;
+}
+
+#random-orange-box {
+    background-color: orange;
+}
+
+footer {
+    background-color: hotpink;
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        /* alt:               3fr 1fr     9fr 3fr 1fr;   */
+        grid-template-rows: 3fr 1fr 4fr 9fr 3fr 1fr;
+    }
+
+    aside {
+        grid-row: span 1;
+    }
+
+    header,
+    nav,
+    footer {
+        grid-column: span 1;
+    }
+}
